@@ -31,11 +31,17 @@ let email = prompt ("Digita la tua email");
 
 let isPresent = false; //utilizzo questa variabile per segnarmi se le due stringhe corrispondono
 
-for (let i = 0; i < 7; i++) {
+for (let i = 0; i < emailInvitati.length; i++) {
     if (emailInvitati[i] === email) {
         isPresent=true; //aggiorna il valore se le ho trovate 
-        console.log(`${email} è presente nella lista degli invitati`);
     }   
+}
+
+//creo le due condizioni se l'invitato è presente o meno 
+if(isPresent == true) {
+    console.log(`${email} è presente nella lista degli invitati`);
+} else {
+    console.log(`${email} non è presente nella lista degli invitati`);
 }
 
  
