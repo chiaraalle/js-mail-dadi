@@ -27,13 +27,15 @@ const emailInvitati = [
     'jynx@mail.com'
   ];
 
-  let email = prompt ("Digita la tua email");
+let email = prompt ("Digita la tua email");
 
-  for (let i = 0; i < emailInvitati.length; i++) {
-    if ( ) {
-     console.log(``);
-   } else {
-     console.log(``);
-   }
-   
- }
+let isPresent = false; //utilizzo questa variabile per segnarmi se le due stringhe corrispondono
+
+for (let i = 0; i < 7; i++) {
+    if (emailInvitati[i] === email) {
+        isPresent=true; //aggiorna il valore se le ho trovate 
+        console.log(`${email} è presente nella lista degli invitati`);
+    }   
+}
+
+ 
