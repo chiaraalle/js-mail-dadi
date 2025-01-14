@@ -44,4 +44,29 @@ if(isPresent == true) {
     console.log(`${email} non è presente nella lista degli invitati`);
 }
 
- 
+
+
+ /*Gioco dei dadi
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Stabilire il vincitore, in base a chi fa il punteggio più alto.
+ */
+
+/*
+
+Mini task: 
+-creo una variabile per segnare il numero generato per il giocatore e quello per il computer
+-uso la proprietà mathrandom per generare un numero casuale da 1 a 6
+-creo una condizione: se ho il numero più alto vince il giocatore altrimenti vince il computer.
+
+*/
+let numeroGiocatore = Math.floor(Math.random() * 6) + 1;
+let numeroComputer = Math.floor(Math.random() * 6) + 1;
+
+console.log(`questo è il numero del giocatore: ${numeroGiocatore}`)
+console.log(`questo è il numero del computer: ${numeroComputer}`)
+
+if(numeroGiocatore > numeroComputer){
+    console.log(`il giocatore vince con il numero ${numeroGiocatore}`)
+} else {
+    console.log(`il computer vince con il numero ${numeroComputer}`)
+}
