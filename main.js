@@ -67,6 +67,6 @@ console.log(`questo è il numero del computer: ${numeroComputer}`)
 
 if(numeroGiocatore > numeroComputer){
     console.log(`il giocatore vince con il numero ${numeroGiocatore}`)
-} else {
+} else { //si potrebbe mettere anche un else if nella condizioni in cui si ottiene un pareggio
     console.log(`il computer vince con il numero ${numeroComputer}`)
 }
